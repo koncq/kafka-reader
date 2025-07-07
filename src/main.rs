@@ -1,7 +1,7 @@
 #[macro_use]
 extern crate prettytable;
 use crate::configuration::get_profiles;
-use crate::kafka_reader_args::{KafkaReaderArgs, KafkaReaderCommands, ProfileSubcommands};
+use crate::arguments::{KafkaReaderArgs, KafkaReaderCommands, ProfileSubcommands};
 use crate::profile::{check_if_already_exists, list_profiles};
 use crate::reader::read_data;
 use clap::Parser;
@@ -9,7 +9,7 @@ use color_eyre::Result;
 use profile::{ProfileData, add_profile};
 
 mod configuration;
-mod kafka_reader_args;
+mod arguments;
 mod profile;
 mod reader;
 
