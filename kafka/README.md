@@ -11,7 +11,15 @@ UI available on `http://localhost:3040`.
 
 ```
 docker container exec -it kafka /bin/bash
-kafka-console-producer --broker-list localhost:9092 --topic test-message-in
+kafka-console-producer --broker-list localhost:9092 --topic test-topic
+```
+
+Then publish message e.g.:
+```json
+{
+  "id": "test-id",
+  "name": "test-name"
+}
 ```
 
 
@@ -19,7 +27,7 @@ kafka-console-producer --broker-list localhost:9092 --topic test-message-in
 
 ```
 docker container exec -it kafka /bin/bash
-kafka-console-consumer --bootstrap-server localhost:9092 --topic test-message-in -from-beginning
+kafka-console-consumer --bootstrap-server localhost:9092 --topic test-topic -from-beginning
 ```
 
 ## Bonus 
