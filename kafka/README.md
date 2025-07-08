@@ -7,6 +7,8 @@ Start kafka server using following command:
 
 UI available on `http://localhost:3040`.
 
+(1) source - [Medium post for dev Kafka from _landoop_](https://medium.com/@clasikas/kafka-in-docker-container-and-command-line-67bb0eb2d)
+
 ## Produce message on Kafka
 
 ```
